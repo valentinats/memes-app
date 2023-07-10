@@ -1,0 +1,78 @@
+html,
+body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1183px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  margin-bottom: 13px;
+  font-size: 35px;
+}
+
+::-webkit-scrollbar {
+    border: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+.settings,
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.memes__list {
+  width: 435px;
+  height: 54px;
+  padding-left: 20px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(down-arrow.png) 96% / 6% no-repeat;
+}
+
+.upper__text,
+.bottom__text {
+  width: 393px;
+  height: 54px;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  outline: none;
+  resize: none;
+}
+
+.memes__wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme__image {
+  width: 568px;
+  border-radius: 15px;
+  border: 1px black solid;
+}

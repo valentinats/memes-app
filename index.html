@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="memes__wrapper">
+        <div class="settings">
+          <h1>Настройки:</h1>
+          <div>
+            <p>Мем</p>
+            <select class="memes__list" name="mySelect">
+              <option hidden="" disabled="" selected="" value="Название мема">
+                Выберите мем
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <p>Текст сверху</p>
+            <textarea
+              class="upper__text"
+              type="text"
+              cols="1"
+              placeholder="Введите текст"
+              spellcheck="true"
+            ></textarea>
+          </div>
+
+          <div>
+            <p>Текст снизу</p>
+            <textarea
+              class="bottom__text"
+              type="text"
+              cols="1"
+              placeholder="Введите текст"
+              spellcheck="true"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="preview">
+          <h1>Превью:</h1>
+          <img id="memImg" class="meme__image"
+            src="https://i.imgflip.com/30b1gx.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js" type="module"></script>
+    <script src="js/api.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
