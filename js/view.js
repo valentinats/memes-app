@@ -68,6 +68,26 @@ export class View {
     context.strokeStyle = "black";
     context.lineWidth = 2;
 
+    //ограничение на 30 символов.
+    if (upperText.length > 30) {
+      upperText = upperText.substring(0, 30);
+      const error = document.querySelector(".error");
+      error.innerHTML = "*не более 30 символов";
+      error.style.fontSize = "12px";
+      error.style.color = "brown";
+    } else {
+      const error = document.querySelector(".error");
+      error.innerHTML = "";
+    }
+    
+    if (bottomText.length > 30) {
+      bottomText = bottomText.substring(0, 30);
+      const error = document.querySelector(".error");
+      error.innerHTML = "*не более 30 символов";
+      error.style.fontSize = "12px";
+      error.style.color = "brown";
+    }
+
     //отображаем верхний текст.
     context.textAlign = "center";
     context.fillText(upperText, canvas.width / 2, 50);
