@@ -1,7 +1,7 @@
 html,
 body {
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -24,9 +24,9 @@ p {
 }
 
 ::-webkit-scrollbar {
-    border: 0px;
-    width: 0px;
-    height: 0px;
+  border: 0px;
+  width: 0px;
+  height: 0px;
 }
 
 .settings,
@@ -36,15 +36,20 @@ p {
   gap: 42px;
 }
 
+.settings__inputs {
+  width: 100%;
+}
+
 .memes__list {
   width: 435px;
   height: 54px;
   padding-left: 20px;
+  margin-bottom: 13px;
   border-radius: 15px;
   border: 1px solid #000;
   cursor: pointer;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -56,9 +61,10 @@ p {
   width: 393px;
   height: 54px;
   padding: 12px 20px;
+  margin-bottom: 13px;
   border-radius: 15px;
   border: 1px solid #000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
   resize: none;
@@ -69,10 +75,84 @@ p {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
+  gap: 170px;
 }
 
 .meme__image {
   width: 568px;
   border-radius: 15px;
   border: 1px black solid;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .memes__wrapper {
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .settings {
+    width: 100%;
+    max-width: 393px;
+    align-items: center;
+  }
+
+  .preview {
+    width: 100%;
+    max-width: 393px;
+    align-items: center;
+  }
+
+  .meme__image,
+  .memes__list {
+    width: 100%;
+  }
+
+  .upper__text,
+  .bottom__text {
+    width: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 865px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .settings,
+  .preview {
+    gap: 30px;
+  }
+
+  .memes__wrapper {
+    gap: 30px;
+  }
+
+  .memes__list {
+    height: 35px;
+  }
+
+  .upper__text,
+  .bottom__text {
+    height: 35px;
+  }
+}
+
+@media (max-width: 430px) {
+  .memes__wrapper {
+    flex-direction: column;
+  }
 }
